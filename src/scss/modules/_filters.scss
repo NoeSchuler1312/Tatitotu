@@ -1,0 +1,13 @@
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 17px;
+}
+
+.filters .filter-add {
+  color: var(--green-color);
+}
+
+.filters .filter-delete {
+  color: var(--pink-color);
+}

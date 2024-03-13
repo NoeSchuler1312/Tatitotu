@@ -17,47 +17,69 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <header class="l-header">
+    <header class="l-header">
+      <div class="container">
+        <div class="row">
           <div class="col-12">
             <div class="row">
               <div class="col-4">
-                <h1><img src="img/logo-tatitotu.svg" alt="Tatitotu" /></h1>
+                <h1 class="logo">
+                  <a href=""
+                    ><img src="img/logo-tatitotu.svg" alt="Tatitotu"
+                  /></a>
+                </h1>
               </div>
-              <div class="col-4"><h2>Défis de conjugaison</h2></div>
               <div class="col-4">
-                <div class="button button-header">Besoin d'aide ?</div>
-                <div class="button button-header">Charger un défi :</div>
+                <h2 class="subtitle">Défis de conjugaison</h2>
+              </div>
+              <div class="col-4">
+                <div class="button-header">
+                  <div class="button button-tuto">
+                    <label for="">Besoin d'aide ?</label>
+                  </div>
+                  <div class="button button-preset">
+                    <label for="">Charger un défi : _ _ _ _ _ _ _ _</label>
+                  </div>
+                  <input class="code-input" type="text" inputmode="numeric" />
+                </div>
               </div>
             </div>
           </div>
-        </header>
+        </div>
       </div>
-      <main class="l-main">
+    </header>
+    <main class="l-main">
+      <div class="container">
         <div class="row">
-          <nav class="l-nav">
-            <div class="col-10">
-              <a href="">Par année <i class="fa-solid fa-caret-down"></i></a>
-              <a href="">Par groupe <i class="fa-solid fa-caret-down"></i></a>
-              <a href=""
-                >Verbes difficiles <i class="fa-solid fa-caret-down"></i
-              ></a>
-              <a href=""
-                >Verbes pronominaux <i class="fa-solid fa-caret-down"></i
-              ></a>
-              <a href="">CIF (FLE) <i class="fa-solid fa-caret-down"></i></a>
+          <div class="col-10 offset-1">
+            <div class="l-nav">
+              <nav class="top-nav">
+                <a href="">Par année <i class="fa-solid fa-caret-down"></i></a>
+                <a href="">Par groupe <i class="fa-solid fa-caret-down"></i></a>
+                <a href=""
+                  >Verbes difficiles <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <a href=""
+                  >Verbes pronominaux <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <a href="">CIF (FLE) <i class="fa-solid fa-caret-down"></i></a>
+              </nav>
             </div>
-          </nav>
+          </div>
         </div>
         <div class="row">
           <div class="col-3">
-            <div class="section section-verbs">
+            <div class="section">
               <h3>Mes verbes</h3>
               <div class="l-card">
-                <a href="" class="filter filter-add">Tout ajouter</a>
-                <a href="" class="filter filter-delete">Tout supprimer</a>
-                <div class="button button-verb">Ajouter un verbe...</div>
+                <div class="filters">
+                  <a href="" class="filters filter-add">Tout ajouter</a>
+                  <a href="" class="filters filter-delete">Tout supprimer</a>
+                </div>
+                <div class="button button-verb">
+                  <input type="text" placeholder="Ajouter un verbe..." />
+                  <div class="counter"><p>0</p></div>
+                </div>
                 <div class="row">
                   <div class="col-6"></div>
                   <div class="col-6"></div>
@@ -66,88 +88,124 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="section section-tenses">
+            <div class="section">
               <h3>Mes temps</h3>
               <div class="l-card">
-                <a href="" class="filter filter-add">Tout ajouter</a>
-                <a href="" class="filter filter-delete">Tout supprimer</a>
+                <div class="filters">
+                  <a href="" class="filters filter-add">Tout ajouter</a>
+                  <a href="" class="filters filter-delete">Tout supprimer</a>
+                </div>
                 <div class="row">
                   <div class="col-6">
                     <h4>Indicatif</h4>
                     <div class="tense">
-                      <div class="button button-tense">présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-tense">Présent</div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé composé</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Futur</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé simple</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <h4>Impératif</h4>
                     <div class="tense">
                       <div class="button button-tense">Présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <h4>Subjonctif</h4>
                     <div class="tense">
                       <div class="button button-tense">Présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <h4>Conditionnel</h4>
                     <div class="tense">
                       <div class="button button-tense">Présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <h4>Participe</h4>
                     <div class="tense">
                       <div class="button button-tense">Présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <h4>Gérondif</h4>
                     <div class="tense">
                       <div class="button button-tense">Présent</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="tense">
                       <div class="button button-tense">Imparfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Plus-que-parfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Futur antérieur</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé antérieur</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Imparfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Imparfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Plus-que-parfait</div>
@@ -155,19 +213,27 @@
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Imparfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Plus-que-parfait</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                     <div class="tense">
                       <div class="button button-tense">Passé</div>
-                      <div class="button button-help"></div>
+                      <div class="button button-help">
+                        <i class="fa-regular fa-circle-question"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -175,16 +241,16 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="section section-options">
+            <div class="section">
               <h3>Options</h3>
-              <div class="card">
+              <div class="l-card">
                 <h4>Nombre de questions</h4>
                 <div class="button button-dropdown"></div>
                 <h4>Type de question</h4>
                 <div class="button button-dropdown"></div>
               </div>
             </div>
-            <div class="section section-print">
+            <div class="section">
               <h3>Impression</h3>
               <div class="l-card">
                 <form action="" class="form">
@@ -236,18 +302,18 @@
             </div>
           </div>
         </div>
-      </main>
-      <div class="row">
-        <footer class="l-footer">
-          <div class="col-12">
-            <ul>
-              <li>Tatitotu © 2024</li>
-              <li>Owner : <a href="">christophe.roulet@edu-vd.ch</a></li>
-              <li>Design : <a href="">noe.schuler@gmail.com</a></li>
-            </ul>
-          </div>
-        </footer>
       </div>
+    </main>
+    <div class="row">
+      <footer class="l-footer">
+        <div class="col-12">
+          <ul>
+            <li>Tatitotu © 2024</li>
+            <li>Owner : <a href="">christophe.roulet@edu-vd.ch</a></li>
+            <li>Design : <a href="">noe.schuler@gmail.com</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="js/main.js" type="module"></script>
   </body>

@@ -1,19 +1,26 @@
 .l-header {
   background-color: var(--beige-color);
+  padding: 45px 40px 20px;
 }
 
 .l-nav {
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
   background-color: rgba(118, 171, 101, 0.4);
+  margin: 32px 0;
+  padding: 20px 0;
 }
 
 .l-main {
   background-color: var(--pastelGreen-color);
+  padding: 32px 40px 64px;
 }
 
 .l-card {
   border-radius: 20px;
   background-color: var(--white-color);
+  padding: 20px 25px;
 }
 
 .l-bottombar {

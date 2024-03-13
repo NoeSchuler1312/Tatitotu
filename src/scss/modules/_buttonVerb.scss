@@ -1,0 +1,28 @@
+.button-verb {
+  border-radius: 20px;
+  background: var(--pastelGreen-color);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-verb input {
+  background-color: var(--pastelGreen-color);
+  border: 0;
+  width: 170px;
+  height: 30px;
+  font-size: 20px;
+}
+
+::placeholder {
+  color: var(--green-color);
+}
+
+.button-verb .counter {
+  border-radius: 15px;
+  background-color: var(--green-color);
+  color: var(--pastelGreen-color);
+  padding: 5px 13px;
+  text-align: center;
+  display: table;
+}
