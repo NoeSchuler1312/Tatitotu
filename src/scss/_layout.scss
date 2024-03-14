@@ -8,19 +8,20 @@
   display: flex;
   justify-content: center;
   background-color: rgba(118, 171, 101, 0.4);
-  margin: 32px 0;
+  margin: 32px 0 69px;
   padding: 20px 0;
 }
 
 .l-main {
   background-color: var(--pastelGreen-color);
-  padding: 32px 40px 64px;
+  padding: 0 40px 64px;
 }
 
 .l-card {
   border-radius: 20px;
   background-color: var(--white-color);
-  padding: 20px 25px;
+  padding: 20px 25px 28px;
+  margin-bottom: 46px;
 }
 
 .l-bottombar {
