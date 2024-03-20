@@ -11,3 +11,11 @@
 .filters .filter-delete {
   color: var(--pink-color);
 }
+
+.filter-add:hover {
+  text-decoration: underline 1px var(--green-color);
+}
+
+.filter-delete:hover {
+  text-decoration: underline 1px var(--pink-color);
+}

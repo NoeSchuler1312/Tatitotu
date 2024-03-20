@@ -33,7 +33,7 @@ input:checked + .switch-wrapper .switch-inner {
 }
 
 input:checked + .switch-wrapper {
-  background: var(--pink-color);
+  background: var(--pinkTransparant-color);
 }
 
 .switch input {

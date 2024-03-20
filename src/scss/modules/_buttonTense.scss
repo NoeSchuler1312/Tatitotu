@@ -1,0 +1,11 @@
+.button-tense {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  padding: 8px 20px;
+  border-radius: 50px;
+  width: 246px;
+}
+
+.button-tense:hover {
+  cursor: pointer;
+}

@@ -10,3 +10,21 @@
   font-size: 21px;
   font-weight: 700;
 }
+
+@keyframes hoverHeader {
+  from {
+    background-color: var(--darkBeige-color);
+  }
+  to {
+    background-color: var(--khaki-color);
+  }
+}
+
+.button-tuto:hover {
+  animation: hoverHeader 0.3s ease-in-out forwards;
+  cursor: pointer;
+}
+
+label:hover {
+  cursor: pointer;
+}

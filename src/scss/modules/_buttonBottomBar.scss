@@ -12,3 +12,17 @@
 .button-bottombar-last {
   border-right: none;
 }
+
+@keyframes hoverPink {
+  from {
+    color: var(--black-color);
+  }
+  to {
+    color: var(--pink-color);
+  }
+}
+
+.button-bottombar:hover {
+  animation: hoverPink 0.3s ease-in-out forwards;
+  cursor: pointer;
+}
