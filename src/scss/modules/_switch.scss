@@ -2,6 +2,10 @@
   margin: 21px 0;
 }
 
+.switch label {
+  font-size: 19px;
+}
+
 .switch-wrapper {
   display: inline-block;
   position: relative;
@@ -22,4 +26,16 @@
   right: 1px;
   border-radius: 30px;
   background: var(--black-color);
+}
+
+input:checked + .switch-wrapper .switch-inner {
+  margin-left: 23px;
+}
+
+input:checked + .switch-wrapper {
+  background: var(--pink-color);
+}
+
+.switch input {
+  display: none;
 }
