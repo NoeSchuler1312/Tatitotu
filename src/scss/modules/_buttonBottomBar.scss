@@ -1,0 +1,14 @@
+.button-bottombar {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  font-size: 32px;
+  font-weight: 700;
+  border-top: 1px solid var(--black-color);
+  border-bottom: 1px solid var(--black-color);
+  border-right: 1px solid var(--black-color);
+}
+
+.button-bottombar-last {
+  border-right: none;
+}

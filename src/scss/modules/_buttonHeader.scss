@@ -1,5 +1,5 @@
 .button-header {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-end;
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
