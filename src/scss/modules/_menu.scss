@@ -1,0 +1,31 @@
+.menu {
+  position: absolute;
+  top: 298px;
+  background-color: var(--white-color);
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.menu-years {
+  padding: 18px 116px 0 22px;
+}
