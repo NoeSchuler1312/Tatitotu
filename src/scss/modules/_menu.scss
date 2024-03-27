@@ -31,7 +31,14 @@
   color: var(--green-color);
   background-color: var(--pastelGreen-color);
   padding: 1px 5px;
+  margin-left: 5px;
   border-radius: 30px;
+  font-size: 16px;
+}
+
+.menu hr {
+  border: 0.5px solid var(--grey-color);
+  margin-bottom: 20px;
 }
 
 .menu-years {
@@ -42,16 +49,32 @@
   position: absolute;
   padding: 18px 22px 0 22px;
   min-width: 220px;
-  top: -18;
+  top: -1;
   left: 158px;
 }
 
-.menu .dropdown {
-  font-size: 19px;
-  font-weight: 500;
+.menu-groups {
+  padding: 18px 22px 0 22px;
+  min-width: 220px;
 }
 
-.menu-label {
+.menu-difficult {
+  padding: 18px 22px 0 22px;
+  min-width: 200px;
+}
+
+.menu-pronominal {
+  padding: 18px 22px 0 22px;
+  min-width: 220px;
+}
+
+.menu-cif {
+  padding: 18px 22px 0 22px;
+  min-width: 220px;
+  right: -60px;
+}
+
+.menu .dropdown-label {
   font-size: 19px;
   font-weight: 500;
 }

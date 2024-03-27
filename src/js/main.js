@@ -1,19 +1,18 @@
-//menu année
-var dropdownYears = document.querySelector(".dropdown-label-years");
-var menuYears = document.querySelector(".menu-years");
+var dropdowns = document.querySelectorAll("[data-dropdown]");
+var menus = document.querySelectorAll("[data-dropdown-menu]");
 
-var toggleMenuYears = function toggleMenuYears() {
-  menuYears.classList.toggle("is-active");
-};
+dropdowns.forEach(function (dropdown, index) {
+  var label = dropdown.querySelector("[data-dropdown-label]");
+  var menu = dropdown.querySelector("[data-dropdown-menu]");
 
-dropdownYears.addEventListener("click", toggleMenuYears);
+  var toggleMenu = function () {
+    menu.classList.toggle("is-active");
+    menus.forEach(function (menu, menuIndex) {
+      if (menuIndex != index) {
+        menu.classList.remove("is-active");
+      }
+    });
+  };
 
-//menu année
-var dropdown5p = document.querySelector(".dropdown-label-5p");
-var menu5p = document.querySelector(".menu-5p");
-
-var toggleMenu5p = function toggleMenu5p() {
-  menu5p.classList.toggle("is-active");
-};
-
-dropdown5p.addEventListener("click", toggleMenu5p);
+  dropdown.addEventListener("click", toggleMenu);
+});
