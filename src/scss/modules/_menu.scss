@@ -1,10 +1,11 @@
 .menu {
   position: absolute;
-  top: 298px;
+  top: 48px;
   background-color: var(--white-color);
   border-radius: 0px 0px 20px 20px;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
   opacity: 0;
+  min-width: 180px;
   pointer-events: none;
 }
 
@@ -26,6 +27,31 @@
   font-weight: 500;
 }
 
+.menu .quantity {
+  color: var(--green-color);
+  background-color: var(--pastelGreen-color);
+  padding: 1px 5px;
+  border-radius: 30px;
+}
+
 .menu-years {
-  padding: 18px 116px 0 22px;
+  padding: 18px 22px 0 22px;
+}
+
+.menu-5p {
+  position: absolute;
+  padding: 18px 22px 0 22px;
+  min-width: 220px;
+  top: 0;
+  left: 158px;
+}
+
+.menu .dropdown {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.menu-label {
+  font-size: 19px;
+  font-weight: 500;
 }

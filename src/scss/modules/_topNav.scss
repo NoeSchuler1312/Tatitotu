@@ -4,11 +4,12 @@
   gap: 30px;
 }
 
-.top-nav a {
+.top-nav .dropdown {
+  position: relative;
   font-size: 22px;
   font-weight: 700;
 }
 
-.top-nav a:hover {
+.top-nav .dropdown:hover {
   cursor: pointer;
 }
