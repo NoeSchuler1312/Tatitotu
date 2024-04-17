@@ -23,35 +23,22 @@
   width: 25px;
   height: 25px;
   bottom: 3px;
-  right: 1px;
+  left: -1px;
   border-radius: 30px;
   background: var(--black-color);
+  transition: all 0.3s;
 }
 
-@keyframes switchPosition {
-  from {
-    left: 0;
-  }
-  to {
-    left: 23px;
-  }
+.switch-wrapper {
+  transition: background 0.3s;
 }
 
 input:checked + .switch-wrapper .switch-inner {
-  animation: switchPosition 0.2s ease-in-out forwards;
-}
-
-@keyframes switchColor {
-  from {
-    background: var(--white-color);
-  }
-  to {
-    background: var(--pinkTransparant-color);
-  }
+  left: 23px;
 }
 
 input:checked + .switch-wrapper {
-  animation: switchColor 0.3s ease-in-out forwards;
+  background-color: var(--pink-color);
 }
 
 .switch input {

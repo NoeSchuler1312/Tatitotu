@@ -1,9 +1,25 @@
 .help-tense {
   padding: 15px;
+  font-size: 16px;
   position: absolute;
   background-color: var(--white-color);
   border-radius: 20px;
   box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.3);
-  display: none;
+  opacity: 0;
+  z-index: 3;
   min-width: 180px;
+  pointer-events: none;
+}
+
+.help-tense.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.help-tense-circle {
+  transition: color 0.3s;
+}
+
+.help-tense-circle:hover {
+  color: var(--pink-color);
 }

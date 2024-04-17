@@ -1,3 +1,4 @@
+// Top nav
 var dropdowns = document.querySelectorAll("[data-dropdown]");
 var menus = document.querySelectorAll("[data-dropdown-menu]");
 var submenus = document.querySelectorAll("[data-dropdown-submenu]");
@@ -18,10 +19,31 @@ dropdowns.forEach(function (dropdown, index) {
   dropdown.addEventListener("click", toggleMenu);
 });
 
+// Tense buttons
 var toggleColors = document.querySelectorAll(".button-tense");
 
 toggleColors.forEach(function (toggleColor) {
   toggleColor.addEventListener("click", function () {
     toggleColor.classList.toggle("is-active");
   });
+});
+
+// Help buttons
+var helpButtons = document.querySelectorAll("[data-button-help]");
+var helps = document.querySelectorAll("[data-help-tense]");
+
+helpButtons.forEach(function (helpButton, index) {
+  var help = helpButton.querySelector("[data-help-tense]");
+  console.log(help);
+
+  var toggleHelp = function () {
+    help.classList.toggle("is-active");
+    helps.forEach(function (help, helpIndex) {
+      if (helpIndex != index) {
+        help.classList.remove("is-active");
+      }
+    });
+  };
+
+  helpButton.addEventListener("click", toggleHelp);
 });
