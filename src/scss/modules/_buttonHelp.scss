@@ -1,17 +1,9 @@
 .button-help {
   font-size: 24px;
-}
-
-@keyframes hoverPink {
-  from {
-    color: var(--black-color);
-  }
-  to {
-    color: var(--pink-color);
-  }
+  transition: color 0.3s;
 }
 
 .button-help:hover {
-  animation: hoverPink 0.3s ease-in-out forwards;
+  color: var(--pink-color);
   cursor: pointer;
 }

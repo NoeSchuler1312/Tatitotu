@@ -7,22 +7,14 @@
   border-top: 1px solid var(--black-color);
   border-bottom: 1px solid var(--black-color);
   border-right: 1px solid var(--black-color);
+  transition: color 0.3s;
 }
 
 .button-bottombar-last {
   border-right: none;
 }
 
-@keyframes hoverPink {
-  from {
-    color: var(--black-color);
-  }
-  to {
-    color: var(--pink-color);
-  }
-}
-
 .button-bottombar:hover {
-  animation: hoverPink 0.3s ease-in-out forwards;
+  color: var(--pink-color);
   cursor: pointer;
 }

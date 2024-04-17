@@ -4,8 +4,13 @@
   padding: 8px 20px;
   border-radius: 50px;
   width: 246px;
+  transition: background 0.3s;
 }
 
 .button-tense:hover {
   cursor: pointer;
+}
+
+.button-tense.is-active {
+  background-color: var(--pinkTransparant-color);
 }

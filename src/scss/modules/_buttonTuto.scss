@@ -4,6 +4,7 @@
   padding: 14px 20px;
   margin-bottom: 11px;
   display: table;
+  transition: background 0.3s;
 }
 
 .button-tuto label {
@@ -11,17 +12,8 @@
   font-weight: 700;
 }
 
-@keyframes hoverHeader {
-  from {
-    background-color: var(--darkBeige-color);
-  }
-  to {
-    background-color: var(--khaki-color);
-  }
-}
-
 .button-tuto:hover {
-  animation: hoverHeader 0.3s ease-in-out forwards;
+  background-color: var(--khaki-color);
   cursor: pointer;
 }
 

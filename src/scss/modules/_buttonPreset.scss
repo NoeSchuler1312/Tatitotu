@@ -3,23 +3,15 @@
   background: var(--darkBeige-color);
   padding: 14px 20px;
   display: table;
+  transition: background 0.3s;
 }
 .button-preset label {
   font-size: 21px;
   font-weight: 700;
 }
 
-@keyframes hoverHeader {
-  from {
-    background-color: var(--darkBeige-color);
-  }
-  to {
-    background-color: var(--khaki-color);
-  }
-}
-
 .button-preset:hover {
-  animation: hoverHeader 0.3s ease-in-out forwards;
+  background-color: var(--khaki-color);
   cursor: pointer;
 }
 

@@ -28,12 +28,30 @@
   background: var(--black-color);
 }
 
+@keyframes switchPosition {
+  from {
+    left: 0;
+  }
+  to {
+    left: 23px;
+  }
+}
+
 input:checked + .switch-wrapper .switch-inner {
-  margin-left: 23px;
+  animation: switchPosition 0.2s ease-in-out forwards;
+}
+
+@keyframes switchColor {
+  from {
+    background: var(--white-color);
+  }
+  to {
+    background: var(--pinkTransparant-color);
+  }
 }
 
 input:checked + .switch-wrapper {
-  background: var(--pinkTransparant-color);
+  animation: switchColor 0.3s ease-in-out forwards;
 }
 
 .switch input {

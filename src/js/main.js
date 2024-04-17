@@ -1,5 +1,6 @@
 var dropdowns = document.querySelectorAll("[data-dropdown]");
 var menus = document.querySelectorAll("[data-dropdown-menu]");
+var submenus = document.querySelectorAll("[data-dropdown-submenu]");
 
 dropdowns.forEach(function (dropdown, index) {
   var label = dropdown.querySelector("[data-dropdown-label]");
@@ -15,4 +16,12 @@ dropdowns.forEach(function (dropdown, index) {
   };
 
   dropdown.addEventListener("click", toggleMenu);
+});
+
+var toggleColors = document.querySelectorAll(".button-tense");
+
+toggleColors.forEach(function (toggleColor) {
+  toggleColor.addEventListener("click", function () {
+    toggleColor.classList.toggle("is-active");
+  });
 });

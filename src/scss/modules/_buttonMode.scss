@@ -4,6 +4,7 @@
   padding: 7px 16px;
   margin: 0 0 11px 10px;
   display: table;
+  transition: background 0.3s;
 }
 
 .button-mode label {
@@ -11,17 +12,8 @@
   font-weight: 900;
 }
 
-@keyframes hoverHeader {
-  from {
-    background-color: var(--darkBeige-color);
-  }
-  to {
-    background-color: var(--khaki-color);
-  }
-}
-
 .button-mode:hover {
-  animation: hoverHeader 0.3s ease-in-out forwards;
+  background-color: var(--khaki-color);
   cursor: pointer;
 }
 
