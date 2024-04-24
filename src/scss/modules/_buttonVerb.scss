@@ -8,14 +8,17 @@
 
 .button-verb input {
   background-color: var(--pastelGreen-color);
+  color: var(--green-color);
   border: 0;
   width: 170px;
   height: 30px;
   font-size: 20px;
-}
+  outline: none;
 
-::placeholder {
-  color: var(--green-color);
+  &::placeholder {
+    font-family: "Nunito", sans-serif;
+    color: var(--green-color);
+  }
 }
 
 .button-verb .counter {
