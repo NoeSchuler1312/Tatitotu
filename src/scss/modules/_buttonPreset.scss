@@ -5,6 +5,11 @@
   display: table;
   transition: background 0.3s;
 }
+
+.button-preset input {
+  outline: none;
+}
+
 .button-preset label {
   font-size: 21px;
   font-weight: 700;
