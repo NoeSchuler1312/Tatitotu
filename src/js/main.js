@@ -28,6 +28,26 @@ toggleColors.forEach(function (toggleColor) {
   });
 });
 
+// // Dropdown lists
+// var dropdownButtons = document.querySelector("[dara-dropdown-button");
+// var lists = document.querySelector("[dara-dropdown-list");
+
+// dropdownButtons.forEach(function (list, index) {
+//   var label = list.querySelector("[data-dropdown-label]");
+//   var dropdownMenu = list.querySelector("[data-dropdown-list]");
+
+//   var toggleMenu = function () {
+//     dropdownMenu.classList.toggle("is-active");
+//     lsits.forEach(function (dropdownMenu, dropdownMenuIndex) {
+//       if (dropdownMenuIndex != index) {
+//         dropdownMenu.classList.remove("is-active");
+//       }
+//     });
+//   };
+
+//   list.addEventListener("click", toggleMenu);
+// });
+
 // Help buttons
 var helpButtons = document.querySelectorAll("[data-button-help]");
 var helps = document.querySelectorAll("[data-help-tense]");
